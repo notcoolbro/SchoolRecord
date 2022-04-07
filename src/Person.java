@@ -1,5 +1,5 @@
 
-public class Person {
+public abstract class Person {
 	private int id;
 	private String lastName;
 	private String firstName;
@@ -8,10 +8,11 @@ public class Person {
 	private String city;
 	private static int personCount = 0; //used for setting ID
 	
-	/**constructor without initial values
+	/**
+	 * constructor with placeholders as initial values
 	 * */
 	public Person() {
-		
+		//increment personCount to create unique id
 		personCount++;
 		this.id = personCount;
 		this.lastName = "n/a";
@@ -26,6 +27,8 @@ public class Person {
 	 * @param reader
 	 */
 	public void enterData(InputReader reader) {
+		//print class name of new person instance
+		System.out.println("Dateneingabe für " + this.getClass().getSimpleName());
 		System.out.println("Bitte Vornamen eingeben");
 		this.firstName = reader.scanString();
 		System.out.println("Bitte Nachnamen eingeben");
