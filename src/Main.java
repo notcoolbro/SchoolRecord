@@ -22,6 +22,7 @@ public class Main {
 		employee.enterData(reader);
 		employee.printIdCard();
 		
+		//close input reader instance
 		reader.close();
 	}
 }

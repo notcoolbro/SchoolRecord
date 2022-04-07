@@ -1,7 +1,8 @@
+
+import java.util.*;
 /**
  * Helper Class for reading user input throughout the program
  */
-import java.util.*;
 public class InputReader {
 	public Scanner scanner; //TODO make private
 	
