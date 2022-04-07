@@ -3,11 +3,12 @@ public class Employee extends Person {
 
 	private String job; // the persons occupation
 
-	// override constructor to add job
+	// override constructor to add job placeholder
 	public Employee() {
 		this.job = "n/a";
 	}
 
+	//overload constructor to add job as param
 	public Employee(String job) {
 		this.job = job;
 	}
