@@ -45,7 +45,7 @@ public abstract class Person {
 	 * print a list of attributes for person
 	 */
 	public void printIdCard() {
-		System.out.println("Akteneintrag für " + this.getClass().getSimpleName() + " mit ID " + this.id);
+		System.out.println("\nAkteneintrag für " + this.getClass().getSimpleName() + " mit ID " + this.id);
 		System.out.println("ID:\t" + this.id);
 		System.out.println("Nachname:\t" + this.lastName);
 		System.out.println("Vorname:\t" +	this.firstName);	
@@ -64,19 +64,40 @@ public abstract class Person {
 		return lastName;
 	}
 	
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
 	public String getFirstName() {
 		return firstName;
+	}
+	
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	
 	public String getStreet() {
 		return street;
 	}
 	
+	public void setStreet(String street) {
+		this.street = street;
+	}
+	
 	public String getZipCode() {
 		return zipCode;
+	}
+	
+	public void setZipCode(String zipCode) {
+		this.zipCode = zipCode;
 	}
 	
 	public String getCity() {
 		return city;
 	}
+	
+	public void setCity(String city) {
+		this.city = city;
+	}
+		
 }

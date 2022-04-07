@@ -10,17 +10,28 @@ public class Main {
 		//create a student file
 		Student student = new Student();
 		student.enterData(reader);
-		student.printIdCard();
 		
 		//create a teacher file
 		Teacher teacher = new Teacher();
 		teacher.enterData(reader);
-		teacher.printIdCard();
 		
-		//create an employee file
-		Employee employee = new Employee("Hausmeister");
-		employee.enterData(reader);
-		employee.printIdCard();
+		//create an employee file without giving a job
+		Employee employee1 = new Employee();
+		
+		//create another employee file
+		Employee employee2 = new Employee();
+		employee2.setJob("Sekretärin");
+		
+		//create another employee file with given job
+		Employee employee3 = new Employee("Hausmeister");
+		employee3.enterData(reader);
+		
+		//print id cards for everyone
+		student.printIdCard();
+		teacher.printIdCard();
+		employee1.printIdCard();
+		employee2.printIdCard();
+		employee3.printIdCard();
 		
 		//close input reader instance
 		reader.close();
