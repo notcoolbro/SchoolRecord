@@ -28,7 +28,7 @@ public abstract class Person {
 	 */
 	public void enterData(InputReader reader) {
 		//print class name of new person instance
-		System.out.println("Dateneingabe für " + this.getClass().getSimpleName());
+		System.out.println("Dateneingabe für " + this.getClass().getSimpleName() + " mit ID " + this.id);
 		System.out.println("Bitte Vornamen eingeben");
 		this.firstName = reader.scanString();
 		System.out.println("Bitte Nachnamen eingeben");
@@ -45,6 +45,7 @@ public abstract class Person {
 	 * print a list of attributes for person
 	 */
 	public void printIdCard() {
+		System.out.println("Akteneintrag für " + this.getClass().getSimpleName() + " mit ID " + this.id);
 		System.out.println("ID:\t" + this.id);
 		System.out.println("Nachname:\t" + this.lastName);
 		System.out.println("Vorname:\t" +	this.firstName);	
