@@ -10,6 +10,16 @@ public class Student extends Person {
 	}
 	
 	/**
+	 * override constructor to add first and last name
+	 * @param firstName
+	 * @param lastName
+	 */
+	public Student(String firstName, String lastName) {
+		super(firstName, lastName);
+		this.classCode = "n/a";
+	}
+	
+	/**
 	 * enter personal data for student
 	 */
 	@Override

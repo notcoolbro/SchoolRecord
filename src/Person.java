@@ -15,8 +15,17 @@ public abstract class Person {
 		//increment personCount to create unique id
 		personCount++;
 		this.id = personCount;
-		this.lastName = "n/a";
 		this.firstName = "n/a";
+		this.lastName = "n/a";
+		this.street = "n/a";
+		this.zipCode = "n/a";
+		this.city = "n/a";
+	}
+	
+	public Person(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.id = personCount;
 		this.street = "n/a";
 		this.zipCode = "n/a";
 		this.city = "n/a";
