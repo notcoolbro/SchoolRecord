@@ -10,7 +10,7 @@ public class Student extends Person {
 	}
 	
 	/**
-	 * override constructor to add first and last name
+	 * overload constructor to add first and last name
 	 * @param firstName
 	 * @param lastName
 	 */
